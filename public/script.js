@@ -162,11 +162,11 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("upgrades").addEventListener("click", () => {
-    tg.Telegram.showAlert('Пока не доступно')
+    tg.showAlert('Пока не доступно')
   });
 
   document.getElementById("ads").addEventListener("click", () => {
-    tg.Telegram.showAlert('Пока не доступно')
+    tg.showAlert('Пока не доступно')
   });
 
 
