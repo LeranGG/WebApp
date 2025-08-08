@@ -161,6 +161,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
   });
 
+  document.getElementById("upgrades").addEventListener("click", () => {
+    tg.Telegram.showAlert('Пока не доступно')
+  });
+
+  document.getElementById("ads").addEventListener("click", () => {
+    tg.Telegram.showAlert('Пока не доступно')
+  });
+
 
   document.getElementById("buyButton").addEventListener("click", (event) => {
     event.preventDefault();
@@ -178,6 +186,7 @@ window.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    
     fetch("/api/buy_pc", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
