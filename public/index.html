@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCClub</title>
+  <link rel="stylesheet" href="styles.css?v=59">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js?v=77" defer></script>
+</head>
+<body>
+
+	<!-- Профиль -->
+	<div id="profile-menu" class="main-menu">
+		<h1 id="user-info">Профиль игрока: </h1>
+		<h2 id="user-info2"></h2>
+		<button id="button_rename_menu">Изменить имя</button>
+	</div>
+
+	<!-- Топ игроков -->
+	<div id="top-menu" class="container">
+		<h1>🏆 Топ игроков:</h1>
+		<h2 id="top-users"></h2>
+	</div>
+
+	<!-- Магазин -->
+	<div id="shop-menu" class="container">
+		<h1>🛒 Выбери отдел</h1>
+		<div class="shop-menu"> 
+			<div class="shop-card" id="computers">🖥️ Компьютеры</div>
+			<div class="shop-card" id="room">⏫ Комната</div>
+			<div class="shop-card" id="upgrades">🔧 Улучшения</div>
+			<div class="shop-card" id="ads">📢 Реклама</div>
+		</div>
+	</div>
+
+	<!-- Изменение имени -->
+	<div id="rename-menu" class="container">
+		<label for="username">Имя пользователя:</label>
+		<input type="text" id="username" placeholder="Введите имя">
+		<button id="button_rename_user">Применить</button>
+	</div>
+
+	<!-- Комната -->
+	<div id="room-menu" class="container">
+		<h1>Ваша комната:</h1>
+		<h2 id="room-lvl">Уровень - </h2>
+		<button id="btn-room">Улучшить</button>
+	</div>
+
+	<!-- Магазин компьютеров -->
+	<div id="computers-menu" class="container">
+		<h1>🖥️ Магазин компьютеров:</h1>
+
+		<h2>Выберите компьютер:</h2>
+		<div class="dropdown" id="computerDropdown">
+			<div class="dropdown-button" id="dropdownComputer">Выберите компьютер</div>
+			<div class="dropdown-list" id="computerList">
+			</div>
+		</div>
+
+		<label for="quantityInput"><h2>Количество:</h2></label>
+		<input type="number" id="quantityInput" placeholder="Введите количество" min="1" step="1">
+
+		<button id="buyButton">Купить</button>
+	</div>
+
+	<!-- Нижняя навигация -->
+	<div class="bottom-nav">
+		<button id="btn-top">🏆</button>
+		<button id="btn-profile">👤</button>
+		<button id="btn-shop">🛒</button>
+	</div>
+
+</body>
+</html>
